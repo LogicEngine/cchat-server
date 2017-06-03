@@ -1,0 +1,15 @@
+language: java
+
+jdk:
+- oraclejdk8
+
+notifications:
+  slack:
+    secure: dtY1DOgCuzoYABpDdWzMkdxodbM78vVX4yBe9TftOkvaPh9u8xDvMiVXwZnpTVOpmd4Uc2DN0gopmcE1+K9Vh/FKvnat+iSaHUjmQETqtGGTYi3qXioGhi75A2zSrgiJaIEtu7bZjoTjQhKy6u6AQqxjgC7Mbtb2D1N0bRQrX6aAa5GHTVz54HxvX/bR/DXHyTbXMU+7YsPHi8XR28kgKDt1UIs9Jjyq+/RUXNcoy/b5inBVYdz9I2ufWdfjFktlMrZ97jdZHs74z2Vc2I7HIhTvJmiQm3ziS/jCkzFxqs9DbmGCYia0zXzi+TVUYICP4UGCuDgWIO3+lXjoArBBFyc+C+3W8yAs4Coaiv++nT08sblggbsAiy3emaKP2PEIpOqHEfIV3O+ZlNwtrVn3aD8sMmKvUM/3g6IXosq1PPRaVOgMIVCxRoX+S3KRXc0qIlQAZcekbJXNjuc/xVPnyZR7hIRSag+N+ZPeJKia6lg/U2kEUpkyvGJPyUGyVwbOkaVCkCU43XR25d7rfduvzelDm/coTYhazKD/ZSidgomMzt+t6UjqcaODEshUQbPTJb74XrfGKokMtbxRa/gEFr+Rh1Rd5aev6GezIpfK0fYwI4SPXiMmmDqyqdoBwofTi1Wo4+2XNQJtnuadNOh6bIxMUrNX6rsDHj3UquxnnMI=
+
+addons:
+  sonarqube:
+    organization: "logic-engine"
+
+script:
+  - sonar-scanner

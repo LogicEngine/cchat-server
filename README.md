@@ -1,1 +1,1 @@
-# cchat-server
+# CChat-server
